@@ -18,8 +18,7 @@ body {
 
 
 header {
-	background: #5CD2C7;
-	height: 6vw;
+	background: transparent;
 	padding: 10px 10px 10px 10px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -30,9 +29,9 @@ header {
 	        flex-direction: row;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
-	        align-items: center;
+			align-items: center;
+			position: absolute;
 	z-index: 10;
-	position: relative;
 	width: 100%;
 	padding-left: 3vw;
 }
@@ -297,7 +296,6 @@ display: flex;
 		width: 100%    !important;
 		height: auto   !important;
 		position: fixed;
-		top: 6vw;
 		left: 0;
 		opacity: 95%;
   }
@@ -376,7 +374,7 @@ display: flex;
 	font-size: 2.2vw;
 	position: relative;
 	left: 5vw;
-	margin-top: 3vw;
+	margin-top: 7vw;
 	-webkit-animation-name: text-fade-in;
 	        animation-name: text-fade-in;
 	-webkit-animation-duration: 8s;
