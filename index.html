@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Shark Trial</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+<body>
+
+	<header>
+		<div class="main-logo">
+			<img class="logo" src="./assets/main-logo.png" alt="logo">
+		</div>
+	</header>
+
+	<section class="banner" id="banner">
+		<div class="empty"></div>
+        <div class="viewport-header" id="video-container" style="z-index:99; position: fixed;">
+            <button class="silence" onclick="videoSound();">
+                <img class="silence-icon" id="sound-icon" src="./Icons/mute.png" alt="">
+            </button>
+            <div class="floating-content">
+                ¿QUIERES VENDER ONLINE?
+                <br>
+                Prueba nuestra nueva plataforma
+                <br>
+                simple y sin costos fijos.
+                <br>
+                Todo lo que quieres, está llegando.
+            </div>
+            <div class="sell" id="sell">
+                <div class="submit-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <a class="sell-button" href="#contact">Vende con nosotros</a>
+                </div>
+            </div>
+        </div>
+        <video autoplay loop muted src="/assets/video_sample_2.mp4" id="myVideo" style="width: 100%; height: auto;"></video>
+    </section>
+	
+
+	<section class="services" id="services">
+
+		<figure class="image-container">
+			<div class="from-top">
+				<img class="icon" src="./Icons/Group 17@2x.png" alt="">
+				<h1>
+					LOGÍSTICA DEL<br>MEJOR NIVEL
+				</h1>
+				<h2>
+					para que cuentes con almacenamiento,
+					control de inventario,
+					aduanas, transporte internacional
+					y última milla
+				</h2>
+			</div>
+		</figure>
+
+		<article class="text-container">
+			<div class="from-top">
+				<img class="icon" src="./Icons/Group 19@2x.png" alt="">
+				<h1>
+					PROYECCIÓN DE VENTA
+				</h1>
+				<h2>
+					al Caribe y Centroamérica
+				</h2>
+			</div>
+		</article>
+
+		<figure class="image-container">
+			<img class="icon" src="./Icons/Group 20@2x.png" alt="">
+			<div class="from-top">
+				<h1>
+					BENEFICIOS Y RECOMPENSAS
+				</h1>
+				<h2>
+					que puedes usar estratégicamente
+				</h2>
+			</div>
+		</figure>
+
+		<article class="text-container">
+			<div class="from-top">
+				<img class="icon" src="./Icons/Group 21@2x.png" alt="">
+				<h1>
+					MARKETING DIGITAL
+				</h1>
+				<h2>
+					que garantiza que las personas
+					vean tu publicación
+				</h2>
+			</div>
+		</article>
+
+		<figure class="image-container">
+			<div class="from-top">
+				<img class="icon" src="./Icons/Group 22@2x.png" alt="">
+				<h1>
+					PLATAFORMA DE COMPRA
+				</h1>
+				<h2>
+					segura y fácil de usar para tus clientes
+				</h2>
+			</div>
+		</figure>
+
+		<article class="text-container">
+			<div class="from-top">
+				<img class="icon" src="./Icons/Group 23@2x.png" alt="">
+				<h1>
+					ACTUALIZACIÓN DE CATÁLOGO
+				</h1>
+				<h2>
+					para tu stock, simple y con autogestión
+				</h2>
+			</div>
+		</article>
+
+		<figure class="image-container final">
+			<div class="from-top">
+				<img class="icon" src="./Icons/Path 56@2x.png" alt="">
+				<h1>
+					SEGUIMIENTO PERMANENTE
+				</h1>
+				<h2>
+					para que no pierdas el rastro de ningún envío o venta
+				</h2>
+			</div>
+		</figure>
+
+		<article class="text-container">
+			<div class="from-top">
+				<img class="icon" src="./Icons/Path 57@2x.png" alt="">
+				<h1>
+					MÚLTIPLES FORMAS DE PAGO
+				</h1>
+				<h2>seguras y confiables</h2>
+			</div>
+		</article>
+
+		<figure class="image-container">
+			<div class="from-top">
+				<img class="icon" src="./Icons/Path 61@2x.png" alt="">
+				<h1>
+					ESTADÍSTICAS E INFORMES
+				</h1>
+				<h2>
+					de ventas y gestión, para que no dejes de crecer
+				</h2>
+			</div>
+        </figure>
+        
+	</section>
+
+
+
+
+	<section class="form-section" id="contact">
+
+		<div class="parallax" id="parallax">
+
+
+
+			<div class="login-box">
+				<form id="contact-form" method="post" action="contact-form-handler.php">
+					<h2>¡Pídenos más info para empezar!</h2>
+
+					<div class="double-box">
+						<div class="user-box">
+							<input type="text" name="name" class="form-control" required>
+							<label>Nombre</label>
+						</div>
+						<div class="user-box">
+							<input type="text" name="lastname" class="form-control" required>
+							<label>Apellido</label>
+						</div>
+					</div>
+					<div class="double-box">
+						<div class="user-box">
+							<input type="email" name="email" class="form-control" required>
+							<label>Correo electrónico</label>
+						</div>
+						<div class="user-box">
+							<input type="text" name="phone" class="form-control" required>
+							<label>Teléfono</label>
+						</div>
+					</div>
+					<div class="user-box">
+						<div class="select">
+							<select name="interest" id="slct" class="form-control">
+								<option selected disabled>Me interesa Shark Express para:</option>
+								<option value="1">Vender</option>
+								<option value="2">Comprar</option>
+							</select>
+						</div>
+					</div>
+					<div class="user-box">
+						<div class="select">
+							<select name="role" id="slct" class="form-control">
+								<option selected disabled>Soy:</option>
+								<option class="option-content" value="1">Productor</option>
+								<option class="option-content" value="2">Distribuidor</option>
+								<option class="option-content" value="3">Otro</option>
+							</select>
+						</div>
+					</div>
+					<div class="user-box">
+						<div class="select">
+							<select name="preferred_method" id="slct" class="form-control">
+								<option selected disabled>¿Cómo te contactamos?</option>
+								<option value="1">Correo</option>
+								<option value="2">WhatsApp</option>
+							</select>
+						</div>
+					</div>
+					<label class="checkbox-container">
+						<input type="checkbox" name="checkbox" value="yes" required>
+						 Acepto las <a class="privacy-policy" id="#privacy-policy"
+							target="_blank"
+							href="https://drive.google.com/file/d/12BgSpJ_qWswjZ5lCil-9jYbIoGy93AVI/view?usp=sharing">Políticas de
+							privacidad</a>
+						<span class="checkmark"></span>
+					</label>
+					<a class="submit-button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<input class="send-button" type="submit" class="form-control submit" value="ENVIAR">
+					</a>
+				</form>
+			</div>
+
+
+
+
+			<div class="contact-text">
+				<h2>¿Estás listo para llevar tus ventas a otro nivel? <br>
+					<br>
+					Escríbenos para que no te pierdas la experiencia Shark.</h2>
+				<br>
+				Correo electrónico:
+				<hr>
+				contacto@sharkexpress.com
+				<hr>
+
+				Dirección:
+				<hr>
+				Terminal de Carga de Tocumen, Edificio 6. <br>
+				Ciudad de Panamá, Panamá.
+				<hr>
+				Teléfono: +50769483011
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+
+	<div class="whatsapp-button" style="z-index: 99;">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<a href="https://api.whatsapp.com/send?phone=50769482914&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Shark."
+			class="float" target="_blank">
+			<i class="fa fa-whatsapp my-float">
+			</i>
+		</a>
+	</div>
+
+
+
+
+	<footer>
+		<div class="copyright">
+			Copyright © 2020 Shark
+		</div>
+		<div>
+			<a target="_blank" href="https://drive.google.com/file/d/12BgSpJ_qWswjZ5lCil-9jYbIoGy93AVI/view?usp=sharing">Políticas
+				de privacidad</a>
+		</div>
+	</footer>
+
+
+
+
+</body>
+
+<script>
+
+	function videoSound() {
+		var video = document.getElementById("myVideo");
+		var icon = document.getElementById("sound-icon");
+		if (video.muted === false) {
+			video.muted = true;
+			icon.src = "./Icons/mute.png";
+		}
+		else {
+			video.muted = false;
+			icon.src = "./Icons/sound.png";
+		}
+		video.play();
+	}
+
+
+	var windw = this;
+
+$.fn.followTo = function ( pos ) {
+    var $this = this,
+        $window = $(windw);
+    
+    $window.scroll(function(e){
+        if ($window.scrollTop() > pos) {
+            $this.css({
+                position: 'absolute',
+                top: pos
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        }
+    });
+};
+
+$('#myVideo').followTo(500);
+$('#sell').followTo(1000);
+
+
+</script>
+
+</html>
+
+
+    
+</body>
+</html>
