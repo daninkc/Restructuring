@@ -313,6 +313,7 @@ display: flex;
   .silence-icon {
 	  height: 5vw;
 	  width: 5vw;
+	  z-index: 99;
   }
 
   .silence {
@@ -321,10 +322,12 @@ display: flex;
 	  position: absolute;
 	  background-color: transparent;
 	  left: 90vw;
+	  z-index: 99;
 	 }
 
 	 .silence:active {
 		 border: none;
+		 z-index: 99;
 	 }
 
 
