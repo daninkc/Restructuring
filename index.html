@@ -193,26 +193,26 @@
 
 
 			<div class="login-box">
-				<form id="contact-form" method="post" action="contact-form-handler.php">
+				<form id="contact-form" method="post" action="testmail.php">
 					<h2>¡Pídenos más info para empezar!</h2>
 
 					<div class="double-box">
 						<div class="user-box">
-							<input type="text" name="name" class="form-control" required>
+							<input type="text" name="name" class="form-control" >
 							<label>Nombre</label>
 						</div>
 						<div class="user-box">
-							<input type="text" name="lastname" class="form-control" required>
+							<input type="text" name="lastname" class="form-control" >
 							<label>Apellido</label>
 						</div>
 					</div>
 					<div class="double-box">
 						<div class="user-box">
-							<input type="email" name="email" class="form-control" required>
+							<input type="email" name="email" class="form-control" >
 							<label>Correo electrónico</label>
 						</div>
 						<div class="user-box">
-							<input type="text" name="phone" class="form-control" required>
+							<input type="text" name="phone" class="form-control" >
 							<label>Teléfono</label>
 						</div>
 					</div>
@@ -220,8 +220,8 @@
 						<div class="select">
 							<select name="interest" id="slct" class="form-control">
 								<option selected disabled>Me interesa Shark Express para:</option>
-								<option value="1">Vender</option>
-								<option value="2">Comprar</option>
+								<option value="Vender">Vender</option>
+								<option value="Comprar">Comprar</option>
 							</select>
 						</div>
 					</div>
@@ -229,9 +229,9 @@
 						<div class="select">
 							<select name="role" id="slct" class="form-control">
 								<option selected disabled>Soy:</option>
-								<option class="option-content" value="1">Productor</option>
-								<option class="option-content" value="2">Distribuidor</option>
-								<option class="option-content" value="3">Otro</option>
+								<option class="option-content" value="Productor">Productor</option>
+								<option class="option-content" value="Distribuidor">Distribuidor</option>
+								<option class="option-content" value="Otro">Otro</option>
 							</select>
 						</div>
 					</div>
@@ -239,8 +239,8 @@
 						<div class="select">
 							<select name="preferred_method" id="slct" class="form-control">
 								<option selected disabled>¿Cómo te contactamos?</option>
-								<option value="1">Correo</option>
-								<option value="2">WhatsApp</option>
+								<option value="Correo">Correo</option>
+								<option value="WhatsApp">WhatsApp</option>
 							</select>
 						</div>
 					</div>
@@ -356,6 +356,7 @@ $.fn.followTo = function ( pos ) {
 };
 
 $('#myVideo').followTo(500);
+
 
 
 </script>
